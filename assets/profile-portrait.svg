@@ -1,0 +1,135 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 600 750" width="100%" height="100%">
+  <defs>
+    <linearGradient id="bgGlow" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#FFE4E6" stop-opacity="0.8"/>
+      <stop offset="100%" stop-color="#FECDD3" stop-opacity="0.2"/>
+    </linearGradient>
+    <linearGradient id="skinGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#FCD5B5"/>
+      <stop offset="100%" stop-color="#EAA67A"/>
+    </linearGradient>
+    <linearGradient id="hairGrad" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#2D1A1E"/>
+      <stop offset="100%" stop-color="#12070A"/>
+    </linearGradient>
+    <linearGradient id="suitGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#3B1219"/>
+      <stop offset="50%" stop-color="#240A0F"/>
+      <stop offset="100%" stop-color="#160509"/>
+    </linearGradient>
+    <linearGradient id="shirtGrad" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#FFFFFF"/>
+      <stop offset="100%" stop-color="#F1F5F9"/>
+    </linearGradient>
+    <linearGradient id="glassesGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#E11D48"/>
+      <stop offset="100%" stop-color="#9F1239"/>
+    </linearGradient>
+    <filter id="softShadow" x="-10%" y="-10%" width="120%" height="120%">
+      <feDropShadow dx="0" dy="16" stdDeviation="20" flood-color="#881337" flood-opacity="0.12"/>
+    </filter>
+  </defs>
+
+  <!-- Stylized Background Aura Behind Head -->
+  <circle cx="300" cy="310" r="210" fill="url(#bgGlow)" filter="url(#softShadow)"/>
+  
+  <!-- Subtle tech circles / orbit lines -->
+  <circle cx="300" cy="310" r="240" fill="none" stroke="#F43F5E" stroke-width="1.5" stroke-dasharray="6 8" opacity="0.3"/>
+  <circle cx="300" cy="310" r="275" fill="none" stroke="#E11D48" stroke-width="1" stroke-dasharray="4 12" opacity="0.2"/>
+
+  <!-- Body / Torso (Blazer & Collared Shirt) -->
+  <g id="torso">
+    <!-- Suit / Sweater Body -->
+    <path d="M120 750 L120 590 C120 510 180 470 240 450 L300 520 L360 450 C420 470 480 510 480 590 L480 750 Z" fill="url(#suitGrad)"/>
+    
+    <!-- White Collared Shirt V-area -->
+    <path d="M250 455 L300 540 L350 455 L335 410 L265 410 Z" fill="url(#shirtGrad)"/>
+    
+    <!-- Shirt Collar Left -->
+    <path d="M265 410 L300 475 L285 435 L245 425 Z" fill="#FFFFFF" stroke="#E2E8F0" stroke-width="1"/>
+    <!-- Shirt Collar Right -->
+    <path d="M335 410 L300 475 L315 435 L355 425 Z" fill="#FFFFFF" stroke="#E2E8F0" stroke-width="1"/>
+    
+    <!-- Red Accent Inner Tie / Lapel Notch -->
+    <path d="M296 470 L304 470 L306 535 L294 535 Z" fill="#BE123C"/>
+
+    <!-- Suit Lapels -->
+    <path d="M225 465 L275 580 L298 525 L260 455 Z" fill="#4C1D24"/>
+    <path d="M375 465 L325 580 L302 525 L340 455 Z" fill="#2E0E14"/>
+  </g>
+
+  <!-- Neck -->
+  <g id="neck">
+    <path d="M265 370 L265 440 C280 455 320 455 335 440 L335 370 Z" fill="url(#skinGrad)"/>
+    <!-- Neck shadow under chin -->
+    <path d="M265 370 C285 395 315 395 335 370 C325 405 275 405 265 370 Z" fill="#D6895C" opacity="0.6"/>
+  </g>
+
+  <!-- Head & Face -->
+  <g id="head">
+    <!-- Ears -->
+    <ellipse cx="205" cy="310" rx="16" ry="24" fill="#ECA77B"/>
+    <ellipse cx="207" cy="310" rx="8" ry="14" fill="#D6895C"/>
+    
+    <ellipse cx="395" cy="310" rx="16" ry="24" fill="#ECA77B"/>
+    <ellipse cx="393" cy="310" rx="8" ry="14" fill="#D6895C"/>
+
+    <!-- Face Shape -->
+    <path d="M215 260 C215 170 385 170 385 260 C385 330 365 395 300 395 C235 395 215 330 215 260 Z" fill="url(#skinGrad)"/>
+
+    <!-- Cheek Warmth / Blush -->
+    <circle cx="245" cy="318" r="18" fill="#F43F5E" opacity="0.12"/>
+    <circle cx="355" cy="318" r="18" fill="#F43F5E" opacity="0.12"/>
+
+    <!-- Hair (Neat, modern tech haircut) -->
+    <path d="M205 240 C200 180 230 115 300 115 C370 115 400 170 395 240 C385 180 365 140 300 140 C240 140 215 180 205 240 Z" fill="url(#hairGrad)"/>
+    <path d="M205 240 C210 200 240 150 310 145 C370 140 385 190 395 235 C380 200 350 165 300 168 C250 170 220 205 205 240 Z" fill="#3D1D24"/>
+    <!-- Hair Volume -->
+    <path d="M225 155 C260 110 345 105 380 145 C355 125 320 120 275 130 C250 135 235 145 225 155 Z" fill="#4A1E27"/>
+
+    <!-- Eyebrows -->
+    <path d="M240 262 Q265 255 285 264" stroke="#260C12" stroke-width="4.5" stroke-linecap="round" fill="none"/>
+    <path d="M315 264 Q335 255 360 262" stroke="#260C12" stroke-width="4.5" stroke-linecap="round" fill="none"/>
+
+    <!-- Eyes -->
+    <g id="eyes">
+      <ellipse cx="262" cy="285" rx="10" ry="6" fill="#FFFFFF"/>
+      <circle cx="263" cy="285" r="5" fill="#240D13"/>
+      <circle cx="265" cy="283" r="2" fill="#FFFFFF"/>
+
+      <ellipse cx="338" cy="285" rx="10" ry="6" fill="#FFFFFF"/>
+      <circle cx="337" cy="285" r="5" fill="#240D13"/>
+      <circle cx="339" cy="283" r="2" fill="#FFFFFF"/>
+    </g>
+
+    <!-- Nose -->
+    <path d="M300 275 L296 320 Q300 326 307 322" stroke="#C47348" stroke-width="3" stroke-linecap="round" fill="none"/>
+
+    <!-- Confident Smile -->
+    <path d="M272 346 Q300 372 328 346" stroke="#881337" stroke-width="3.5" stroke-linecap="round" fill="none"/>
+    <path d="M278 348 Q300 366 322 348" fill="#FFFFFF"/>
+
+    <!-- Glasses (Red / Tortoiseshell frame matching reference image's vibrant eyeglasses!) -->
+    <g id="glasses" filter="url(#softShadow)">
+      <!-- Left Lens Frame -->
+      <rect x="232" y="265" width="58" height="42" rx="12" fill="none" stroke="url(#glassesGrad)" stroke-width="4.5"/>
+      <rect x="235" y="268" width="52" height="36" rx="9" fill="#E11D48" fill-opacity="0.06"/>
+      <!-- Left Lens Glint -->
+      <path d="M240 274 L275 274" stroke="#FFFFFF" stroke-width="2" stroke-linecap="round" opacity="0.6"/>
+
+      <!-- Bridge -->
+      <path d="M290 282 Q300 278 310 282" stroke="url(#glassesGrad)" stroke-width="4.5" fill="none" stroke-linecap="round"/>
+
+      <!-- Right Lens Frame -->
+      <rect x="310" y="265" width="58" height="42" rx="12" fill="none" stroke="url(#glassesGrad)" stroke-width="4.5"/>
+      <rect x="313" y="268" width="52" height="36" rx="9" fill="#E11D48" fill-opacity="0.06"/>
+      <!-- Right Lens Glint -->
+      <path d="M318 274 L353 274" stroke="#FFFFFF" stroke-width="2" stroke-linecap="round" opacity="0.6"/>
+
+      <!-- Temples -->
+      <path d="M232 278 L206 284" stroke="url(#glassesGrad)" stroke-width="4" stroke-linecap="round"/>
+      <path d="M368 278 L394 284" stroke="url(#glassesGrad)" stroke-width="4" stroke-linecap="round"/>
+    </g>
+  </g>
+</svg>
+
